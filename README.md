@@ -12,13 +12,21 @@
 
 ## 安装
 
-使用 Skills CLI：
+本项目不需要发布到 npm。以下命令会临时运行 npm 上的 `skills` CLI，再从 GitHub 克隆本仓库并安装其中的 `SKILL.md`。
+
+安装到当前项目：
 
 ```bash
 npx skills add TangHuaiZhe/deep-equity-research
 ```
 
-也可以将 `SKILL.md` 复制到 Agent 的 Skills 目录。
+安装到本机的全局 Agent Skills 目录：
+
+```bash
+npx skills add TangHuaiZhe/deep-equity-research --global
+```
+
+也可以将 `SKILL.md` 手动复制到目标 Agent 的 Skills 目录。仓库必须保持可访问；如果仓库是私有仓库，使用者需要具备相应的 GitHub 访问权限。
 
 ## 使用示例
 
@@ -32,9 +40,9 @@ npx skills add TangHuaiZhe/deep-equity-research
 
 ## 数据要求
 
-本 Skill 要求通过可用的行情、财报、公告和检索工具核验关键数据。找不到的数据必须明确标注缺失，不得虚构。
+本 Skill 默认通过平安资讯/证券 Skill 获取行情和财务数据，并结合财报、公告核验关键数据。平安资讯未安装、未配置或不可用时，会尝试使用腾讯自选股 Skill。找不到的数据必须明确标注缺失，不得虚构。
 
-金融数据工具与 API 凭据需要由使用者自行配置。请勿将 API Key 提交到仓库。
+使用前，请按平安资讯 Skill 的说明在本机配置 `PINGAN_SKILL_APIKEY`。未检测到 API Key 时，Skill 会尝试使用已配置的腾讯自选股；两者均不可用时才停止完整研究并提示完成接入。请勿将 API Key 提交到仓库或粘贴到公开对话中。
 
 ## 免责声明
 
