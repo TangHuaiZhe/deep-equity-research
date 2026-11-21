@@ -63,3 +63,15 @@ npx skills add TangHuaiZhe/deep-equity-research --global
 ## 免责声明
 
 本项目仅用于研究和信息分析，不构成个性化投资建议，也不承诺任何投资收益。
+
+## Mental Models Audit（实验分支）
+
+本仓库的 `mental-models-audit/` 提供基于《跨学科思维模型100讲》的跨学科审计层：
+
+- 1 个总控路由 Skill
+- 10 个模块路由 Skill
+- 100 个原子审查 Skill
+- quick-scan / deep-audit / adversarial-audit 三种模式
+- 统一输出 Schema、模型注册表和与 `deep-equity-research` 的集成说明
+
+它不替代财务事实底稿和估值，而是在已有研究基础上检查：基准率、因果、激励、反馈、竞争、护城河、系统风险、认知偏差、情景与证伪。
