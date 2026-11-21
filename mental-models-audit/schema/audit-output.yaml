@@ -1,0 +1,32 @@
+version: 1
+atomic_audit:
+  model_id: "031"
+  model_name: "基础概率与基准率"
+  relevance: "Material | Secondary | Not material"
+  question: "本模型试图回答的核心问题"
+  evidence_for:
+    - fact: "支持当前命题的证据"
+      source: "来源或数据定位"
+  evidence_against:
+    - fact: "反对当前命题的证据"
+      source: "来源或数据定位"
+  mechanism: "证据通过什么机制影响公司/行业"
+  implication: "对未来经营、竞争、资本回报或估值的含义"
+  bull_case_impact: "strengthen | neutral | weaken"
+  bear_case_impact: "strengthen | neutral | weaken"
+  unknowns:
+    - "当前无法回答但可能改变结论的问题"
+  falsification:
+    - "可观察、尽量带阈值或时间的证伪条件"
+  confidence: 0
+  next_models:
+    - "007"
+
+portfolio_summary:
+  top_positive_mechanisms: []
+  top_negative_mechanisms: []
+  critical_unknowns: []
+  thesis_killers: []
+  model_conflicts: []
+  evidence_gaps: []
+  recommended_next_checks: []

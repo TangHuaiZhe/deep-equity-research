@@ -1,0 +1,35 @@
+version: 1
+modes:
+  quick-scan:
+    target_models: "10-20"
+    require_domains:
+      - epistemology_or_statistics
+      - economics_or_business
+      - systems
+      - game_theory_or_strategy
+      - behavioral_self_audit
+  deep-audit:
+    target_models: 100
+    relevance_values: [Material, Secondary, Not material]
+  adversarial-audit:
+    target: "attack_thesis"
+    priority_tags:
+      - base-rate
+      - falsification
+      - inversion
+      - tail-risk
+      - competition
+      - substitution
+      - policy-resistance
+      - incentives
+      - moat-decay
+      - scenario
+      - optionality
+
+selection_rules:
+  - "先按问题结构选模型，不按课程顺序选。"
+  - "同一底层机制最多保留1个主模型+2个辅助模型。"
+  - "没有数据可检验的模型降低优先级。"
+  - "若结论高度依赖单一假设，优先路由到反证与情景模型。"
+  - "若参与者会适应，必须至少加入1个博弈/激励/复杂系统模型。"
+  - "若存在不可逆资本配置，必须考虑尾部风险、安全边际或实物期权。"
