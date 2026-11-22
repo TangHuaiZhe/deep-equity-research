@@ -63,3 +63,15 @@ npx skills add TangHuaiZhe/deep-equity-research --global
 ## 免责声明
 
 本项目仅用于研究和信息分析，不构成个性化投资建议，也不承诺任何投资收益。
+
+## 跨学科 Mental Models Audit
+
+本 Skill 可与独立仓库 [TangHuaiZhe/mental-models-audit](https://github.com/TangHuaiZhe/mental-models-audit) 联用。
+
+它提供：
+
+- **quick-scan**：自动挑选约 10–20 个高相关模型做快速盲点扫描；
+- **adversarial-audit**：专门攻击当前投资 thesis；
+- **deep-audit**：100 个模型逐项判断 Material / Secondary / Not material。
+
+推荐流程是：先由 `deep-equity-research` 建立事实、财务和估值底稿，再用 `mental-models-audit` 做跨学科机制审计，最后把真正改变结论的反证、未知数和触发器回填报告。
